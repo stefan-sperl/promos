@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "promos": [
+    {
+      "id": "feierabend-2026-11",
+      "app": "Feierabend-Countdown",
+      "title": "Kennst du unsere anderen Apps?",
+      "text": "Der Feierabend-Countdown zählt die Stunden bis zum Feierabend – vom Macher des Rentencountdowns. Gratis für iPhone und Android.",
+      "emoji": "🍻",
+      "images": [
+        "https://raw.githubusercontent.com/stefan-sperl/promos/main/images/feierabend-countdown/1.png",
+        "https://raw.githubusercontent.com/stefan-sperl/promos/main/images/feierabend-countdown/2.png"
+      ],
+      "ios": "https://apps.apple.com/de/app/id0000000000",
+      "android": "https://play.google.com/store/apps/details?id=com.sperls.feierabend&referrer=utm_source%3Drentencountdown%26utm_medium%3Dpromo%26utm_campaign%3Dfeierabend-2026-11",
+      "from": "2026-11-01",
+      "until": "2026-12-31",
+      "minLaunches": 3,
+      "button": "App ansehen",
+      "enabled": false
+    }
+  ]
+}

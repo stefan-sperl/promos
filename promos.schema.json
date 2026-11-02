@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Rentencountdown promos",
+  "type": "object",
+  "required": ["promos"],
+  "properties": {
+    "version": { "type": "integer" },
+    "promos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "app", "title", "text"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "minLength": 1, "pattern": "^[a-z0-9-]+$" },
+          "app": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "text": { "type": "string", "minLength": 1 },
+          "emoji": { "type": "string" },
+          "images": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^https://" }
+          },
+          "ios": { "type": "string", "pattern": "^https://apps\\.apple\\.com/" },
+          "android": { "type": "string", "pattern": "^https://play\\.google\\.com/" },
+          "from": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+          "until": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+          "minLaunches": { "type": "integer", "minimum": 0 },
+          "button": { "type": "string", "minLength": 1 },
+          "enabled": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}
